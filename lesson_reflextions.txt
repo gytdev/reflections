@@ -1,0 +1,4 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+When You initialize a repository, git creates the required files for a new project. Everything that is needed to start version 
+control and checking between commits
