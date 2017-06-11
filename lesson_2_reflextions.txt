@@ -7,3 +7,11 @@ How is the staging area different from the working directory and the repository?
 The staging area is like a safety buffer for us to add only the files we want to add and not all the files that are
 in the CWD(current working directory). So it helps us to do things more strategically without forcing us to commit Everything
 
+How can you use the staging area to make sure you have one commit per logical change?
+-the best thing would be to be mindful of doing commits the right way
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+You use branch out your master branch to another branch if You want to make some experimental feature and
+keep Your core code intact. You get the same version of all your files plus keep the old ones. So You can experiment on
+the branch and see if the code is good to implement permenentelly to Your core code. This can also be used to customize
+Your code to different clients or to make different translations for Your code.
