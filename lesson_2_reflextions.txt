@@ -20,5 +20,10 @@ How do the diagrams help you visualize the branch structure?
 checkout to some branch
 
 What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
-When merging a branch to master: all the commits of the merged branch are put in the master branch and sorted by date. 
+-When merging a branch to master: all the commits of the merged branch are put in the master branch and sorted by date. 
 The merged branch becomes obselete and we can delete it.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+-if two authors make a change on the same part of the code (ie. function), there will be a conflict with
+git automerging. It will not make any changes to the code and say that there was a conflict. Which is 
+good for You and annoying, because You have to sort the conflict Yourself. It wastes time, but decreases errors.
