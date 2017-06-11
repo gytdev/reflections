@@ -15,3 +15,7 @@ You use branch out your master branch to another branch if You want to make some
 keep Your core code intact. You get the same version of all your files plus keep the old ones. So You can experiment on
 the branch and see if the code is good to implement permenentelly to Your core code. This can also be used to customize
 Your code to different clients or to make different translations for Your code.
+
+How do the diagrams help you visualize the branch structure?
+It helps me understand which commits point to which branch and which commit might be ommited (discarted) after I
+checkout to some branch
