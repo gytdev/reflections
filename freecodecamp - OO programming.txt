@@ -1,0 +1,73 @@
+## MAP ##
+
+The map method is a convenient way to iterate through arrays. Here's an example usage:
+
+var oldArray = [1, 2, 3];
+var timesFour = oldArray.map(function(val){
+  return val * 4;
+});
+console.log(timesFour); // returns [4, 8, 12]
+console.log(oldArray);  // returns [1, 2, 3]
+
+## reduce ##
+
+The array method reduce is used to iterate through an array and condense it into one value.
+
+To use reduce you pass in a callback whose arguments are an accumulator (in this case, previousVal) and the current value (currentVal)
+
+var singleVal = array.reduce(function(previousVal, currentVal) {
+  return previousVal - currentVal;
+}, 0);
+
+## filter ##
+
+The filter method is used to iterate through an array and filter out elements where a given condition is not true.
+filter is passed a callback function which takes the current value (we've called that val) as an argument.
+
+
+The following code is an example of using filter to remove array elements that are equal to five:
+
+Note: We omit the second and third arguments since we only need the value
+
+array = array.filter(function(val) {
+  return val !== 5;
+});
+
+## sort ## https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+
+You can use the method sort to easily sort the values in an array alphabetically or numerically.
+
+Unlike the previous array methods we have been looking at, sort actually alters the array in place. However, it also returns this sorted array.
+
+var array = [1, 12, 21, 2];
+
+array.sort(function(a, b){
+  return a < b;
+}); <<sorts from largest to smallest
+
+## reverse ## 
+
+reverses the order of the elements in array
+array.reverse()
+
+## concat ##
+
+concactenates two arrays
+Here is an example of concat being used to concatenate otherArray onto the end of oldArray:
+
+newArray = oldArray.concat(otherArray);
+
+## split ##
+
+splits up strings to arrays. string.split(" ")
+
+## join ##
+
+Joins array elements to a string with something in between. 
+
+var joinMe = ["Split","me","into","an","array"];
+var joinedString = '';
+
+// Only change code below this line.
+
+joinedString = joinMe.join(" ");
