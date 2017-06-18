@@ -15,6 +15,9 @@ regular expressions
     Appending a plus sign (+) after the selector, e.g. /\d+/g, allows this regular expression to match one or more digits.
     The trailing g is short for 'global', which allows this regular expression to find all matches rather than stop at the first match.
 
+/\w+/g -finds all words and digits in a string (does not exclude _ (underscore dash), so need to exclude manually)
+/\W+/g -finds all nonword and non-digits of the string
+
 /\s+/g -finds all spaces in a string
 
     The whitespace characters are " " (space), \s (space), \r (the carriage return), \n (newline), \t (tab), and \f (the form feed).
